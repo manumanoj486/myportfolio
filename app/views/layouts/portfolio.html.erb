@@ -7,11 +7,11 @@
     <%= csp_meta_tag %>
 
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body >
     <% if current_user.is_a?(User) %>
       <%= render 'shared/nav'%>     
       <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> 

@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+	layout "portfolio"
 	def index
 		@portfolio_items = Portfolio.all
 	end	
@@ -9,6 +10,7 @@ class PortfoliosController < ApplicationController
 
 	def show
 		@portfolio = Portfolio.find(params[:id])
+		@page_title = @portfolio.title
 		3.times{ @portfolio.technologies.build }
 	end	
 

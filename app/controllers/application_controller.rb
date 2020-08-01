@@ -1,7 +1,6 @@
 require 'ostruct'
 class ApplicationController < ActionController::Base
+	skip_before_action :verify_authenticity_token
 	include DeviseWhiteList
-	def current_user
-		super || OpenStruct.new(email: 'guest@test', username:"guest user")
-	end	
+	include CustomDefault
 end
