@@ -1,7 +1,7 @@
 
 @import "custom/devise_styles.css";
-@import "spinner.css"
-@import "bootstrap"
+@import "spinner.css";
+@import "bootstrap";
 
 /* stylelint-disable property-no-vendor-prefix */
 
@@ -165,4 +165,13 @@ body {
   .cover-container {
     width: 700px;
   }
+}
+
+.card {
+	color: black;
+	text-align: left;
+}
+
+.auth_link a {
+	color: black;
 }
